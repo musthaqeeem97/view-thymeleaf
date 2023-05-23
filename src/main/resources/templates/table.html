@@ -1,0 +1,19 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+         <th>Age</th>
+        </tr>
+        <tr th:each="item :${tableList}">      
+        <td th:text="${item.name}">
+        <td th:text="${item.age}">
+      </tr>
+      </thead>
+     </table>
+  </body>
+        
